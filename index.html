@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Khám phá iPhone 16 Pro — thiết kế titan, camera chuyên nghiệp và sức mạnh vượt trội.">
+    <title>iPhone 16 Pro — Tinh tế trong từng chi tiết</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1d1d1f;
+        --muted: #6e6e73;
+        --blue: #06c;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .navbar {
+        background: rgb(255 255 255 / 92%);
+        backdrop-filter: blur(14px);
+      }
+
+      .nav-link,
+      .navbar-brand {
+        color: var(--ink);
+      }
+
+      .hero {
+        min-height: 690px;
+        overflow: hidden;
+        background:
+          radial-gradient(ellipse at 50% 92%, rgb(111 81 180 / 28%), transparent 38%),
+          linear-gradient(180deg, #faf9fc 0%, #f3f1f8 100%);
+      }
+
+      .hero-copy {
+        position: relative;
+        z-index: 1;
+      }
+
+      .eyebrow {
+        color: var(--muted);
+        font-size: .82rem;
+        font-weight: 600;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+
+      .hero h1 {
+        font-size: clamp(3rem, 8vw, 6.5rem);
+        font-weight: 700;
+        letter-spacing: -.065em;
+        line-height: .98;
+      }
+
+      .hero-phone {
+        position: relative;
+        width: min(270px, 65vw);
+        height: 390px;
+        margin: 3rem auto -4rem;
+        border: 8px solid #28252e;
+        border-radius: 48px;
+        background:
+          radial-gradient(ellipse at 70% 32%, rgb(255 255 255 / 75%), transparent 8%),
+          radial-gradient(ellipse at 35% 58%, #e2a5bf 0%, transparent 35%),
+          radial-gradient(ellipse at 70% 70%, #8460a9 0%, transparent 43%),
+          linear-gradient(145deg, #f0cbd9 0%, #c18ab5 44%, #403766 100%);
+        box-shadow: 0 32px 75px rgb(56 38 79 / 30%), inset 0 0 0 2px rgb(255 255 255 / 32%);
+        transform: rotate(-7deg);
+      }
+
+      .hero-phone::before {
+        position: absolute;
+        top: 9px;
+        left: 50%;
+        width: 84px;
+        height: 24px;
+        border-radius: 20px;
+        background: #17161b;
+        content: "";
+        transform: translateX(-50%);
+      }
+
+      .hero-phone::after {
+        position: absolute;
+        right: -12px;
+        top: 100px;
+        width: 4px;
+        height: 72px;
+        border-radius: 0 4px 4px 0;
+        background: #514d57;
+        content: "";
+      }
+
+      .section-dark {
+        background: #050505;
+        color: #f5f5f7;
+      }
+
+      .section-dark .text-secondary {
+        color: #a1a1a6 !important;
+      }
+
+      .feature-card {
+        min-height: 240px;
+        border: 1px solid #e5e5e7;
+        border-radius: 24px;
+        background: #fff;
+      }
+
+      .feature-card i {
+        color: var(--blue);
+      }
+
+      .spec-items {
+        display: contents;
+      }
+
+      .buy-button {
+        border-radius: 999px;
+      }
+
+      .footer-link {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        color: var(--ink);
+      }
+
+      @media (max-width: 767.98px) {
+        .hero {
+          min-height: 610px;
+        }
+
+        .hero-phone {
+          height: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom" aria-label="Điều hướng chính">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#" aria-label="Trang chủ iPhone"> iPhone</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="#diem-noi-bat">Điểm nổi bật</a></li>
+            <li class="nav-item"><a class="nav-link" href="#thiet-ke">Thiết kế</a></li>
+            <li class="nav-item"><a class="nav-link" href="#thong-so">Thông số</a></li>
+          </ul>
+          <a class="btn btn-primary btn-sm buy-button px-3" href="#mua-ngay">Mua ngay</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero d-flex align-items-center text-center py-5" aria-labelledby="hero-title">
+        <div class="container hero-copy">
+          <p class="eyebrow mb-3">iPhone 16 Pro</p>
+          <h1 id="hero-title" class="mb-3">Đỉnh cao<br>trong tầm tay.</h1>
+          <p class="fs-5 text-secondary mb-4">Mạnh mẽ hơn. Tinh tế hơn. Sẵn sàng cho mọi điều bạn tưởng tượng.</p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+            <a class="btn btn-primary buy-button px-4 py-2" href="#mua-ngay">Khám phá ngay</a>
+            <a class="link-primary text-decoration-none" href="#diem-noi-bat">Tìm hiểu thêm <i class="fa-solid fa-chevron-right ms-1" aria-hidden="true"></i></a>
+          </div>
+          <div class="hero-phone" role="img" aria-label="Minh họa iPhone 16 Pro màu titan sa mạc"></div>
+        </div>
+      </section>
+
+      <section id="diem-noi-bat" class="section-dark py-5">
+        <div class="container py-lg-5">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6">
+              <p class="eyebrow text-secondary mb-3">Hiệu năng chuyên nghiệp</p>
+              <h2 class="display-4 fw-semibold mb-4">Sức mạnh mở ra<br>mọi khả năng.</h2>
+              <p class="fs-5 text-secondary mb-0">Chip A18 Pro mang đến hiệu năng vượt trội cho những trải nghiệm chơi game, sáng tạo và xử lý AI đầy ấn tượng.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6">
+                  <div class="p-4 rounded-4 h-100" style="background:#171719">
+                    <i class="fa-solid fa-microchip fs-3 text-info mb-4" aria-hidden="true"></i>
+                    <h3 class="h5">Chip A18 Pro</h3>
+                    <p class="text-secondary small mb-0">Nhanh và tiết kiệm năng lượng hơn.</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-4 rounded-4 h-100" style="background:#171719">
+                    <i class="fa-solid fa-gamepad fs-3 text-info mb-4" aria-hidden="true"></i>
+                    <h3 class="h5">Đồ họa đỉnh cao</h3>
+                    <p class="text-secondary small mb-0">Đắm chìm trong từng khung hình.</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-4 rounded-4 h-100" style="background:#171719">
+                    <i class="fa-solid fa-bolt fs-3 text-info mb-4" aria-hidden="true"></i>
+                    <h3 class="h5">Tác vụ tức thì</h3>
+                    <p class="text-secondary small mb-0">Đa nhiệm mượt mà suốt ngày dài.</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-4 rounded-4 h-100" style="background:#171719">
+                    <i class="fa-solid fa-wand-magic-sparkles fs-3 text-info mb-4" aria-hidden="true"></i>
+                    <h3 class="h5">Sẵn sàng cho AI</h3>
+                    <p class="text-secondary small mb-0">Trợ giúp sáng tạo theo cách riêng bạn.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="thiet-ke" class="py-5">
+        <div class="container py-lg-5">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <div class="p-5 rounded-5 text-center" style="background:linear-gradient(145deg,#f6e7e6,#e9e2f1 55%,#d5d9e8)">
+                <div class="hero-phone my-0" role="img" aria-label="Cận cảnh thiết kế iPhone với các cạnh titan"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+              <p class="eyebrow mb-3">Thiết kế titan</p>
+              <h2 class="display-5 fw-semibold mb-4">Nhẹ hơn.<br>Bền bỉ hơn.</h2>
+              <p class="fs-5 text-secondary mb-4">Khung titan cấp 5 cao cấp kết hợp mặt trước Ceramic Shield thế hệ mới, tạo nên vẻ đẹp thanh lịch và độ bền đáng tin cậy.</p>
+              <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                <li><i class="fa-solid fa-circle-check text-primary me-2" aria-hidden="true"></i> Màn hình Super Retina XDR 6,3 inch</li>
+                <li><i class="fa-solid fa-circle-check text-primary me-2" aria-hidden="true"></i> Nút Tác Vụ tùy chỉnh tiện lợi</li>
+                <li><i class="fa-solid fa-circle-check text-primary me-2" aria-hidden="true"></i> Bốn sắc titan đầy cuốn hút</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light py-5">
+        <div class="container py-lg-4">
+          <div class="text-center mb-5">
+            <p class="eyebrow mb-2">Hệ thống camera Pro</p>
+            <h2 class="display-5 fw-semibold">Bắt trọn điều kỳ diệu.</h2>
+            <p class="text-secondary fs-5 mb-0">Từ khoảnh khắc đời thường đến thước phim điện ảnh.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="feature-card p-4 p-lg-5 h-100">
+                <i class="fa-solid fa-camera-retro fs-2 mb-4" aria-hidden="true"></i>
+                <h3 class="h4 fw-semibold">Camera Fusion 48MP</h3>
+                <p class="text-secondary mb-0">Ảnh siêu chi tiết, màu sắc sống động trong mọi điều kiện ánh sáng.</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="feature-card p-4 p-lg-5 h-100">
+                <i class="fa-solid fa-magnifying-glass-plus fs-2 mb-4" aria-hidden="true"></i>
+                <h3 class="h4 fw-semibold">Telephoto 5x</h3>
+                <p class="text-secondary mb-0">Tiến gần hơn đến chủ thể với khả năng zoom quang học ấn tượng.</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="feature-card p-4 p-lg-5 h-100">
+                <i class="fa-solid fa-film fs-2 mb-4" aria-hidden="true"></i>
+                <h3 class="h4 fw-semibold">Quay video 4K</h3>
+                <p class="text-secondary mb-0">Ghi lại những thước phim mượt mà, sắc nét theo chuẩn điện ảnh.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="thong-so" class="py-5">
+        <div class="container py-lg-4">
+          <div class="text-center mb-5">
+            <p class="eyebrow mb-2">Thông số nổi bật</p>
+            <h2 class="display-5 fw-semibold">Một chiếc Pro toàn diện.</h2>
+          </div>
+          <div class="row g-4">
+            <div class="spec-items">
+              <div class="col-6 col-lg-3">
+                <div class="text-center p-3"><i class="fa-solid fa-display fs-3 text-primary mb-3" aria-hidden="true"></i><h3 class="h6 fw-semibold">Màn hình</h3><p class="text-secondary small mb-0">Super Retina XDR<br>6,3 inch</p></div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="text-center p-3"><i class="fa-solid fa-camera fs-3 text-primary mb-3" aria-hidden="true"></i><h3 class="h6 fw-semibold">Camera</h3><p class="text-secondary small mb-0">Fusion 48MP<br>Telephoto 5x</p></div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="text-center p-3"><i class="fa-solid fa-microchip fs-3 text-primary mb-3" aria-hidden="true"></i><h3 class="h6 fw-semibold">Chip</h3><p class="text-secondary small mb-0">A18 Pro<br>GPU 6 lõi</p></div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="text-center p-3"><i class="fa-solid fa-droplet fs-3 text-primary mb-3" aria-hidden="true"></i><h3 class="h6 fw-semibold">Độ bền</h3><p class="text-secondary small mb-0">Khung titan<br>Chống nước IP68</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mua-ngay" class="py-5">
+        <div class="container">
+          <div class="p-4 p-md-5 rounded-5 text-center text-white" style="background:linear-gradient(120deg,#242039,#514273)">
+            <p class="eyebrow text-white-50 mb-2">Sẵn sàng nâng cấp?</p>
+            <h2 class="display-5 fw-semibold mb-3">iPhone 16 Pro đang chờ bạn.</h2>
+            <p class="text-white-50 mb-4">Chọn phiên bản yêu thích và bắt đầu hành trình sáng tạo mới.</p>
+            <a class="btn btn-light buy-button px-4 py-2 fw-semibold" href="#thong-so">Xem thông số</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-top py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="small text-secondary mb-0">© 2026 iPhone Product Page. Bài tập thực hành Bootstrap.</p>
+        <div class="d-flex gap-4 small">
+          <a class="footer-link" href="#diem-noi-bat">Điểm nổi bật</a>
+          <a class="footer-link" href="#thiet-ke">Thiết kế</a>
+          <a class="footer-link" href="#thong-so">Thông số</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
